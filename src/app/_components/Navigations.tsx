@@ -291,7 +291,7 @@ const Navigation = () => {
             <Link
               href="/generate"
               onClick={() => setIsOpen(false)}
-              className={`flex items-center gap-2 w-full px-3 py-2 rounded-md ${
+              className={`flex items-center gap-2 w-full px-3 py-2 rounded-md ${ 
                 isActive("/generate")
                   ? "bg-primary/10 text-primary"
                   : "hover:bg-muted"

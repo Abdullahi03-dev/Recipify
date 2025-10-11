@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono ,Playfair_Display,Inter} from "next/font/google";
+import { Playfair_Display,Inter} from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/context/AuthContext";
 import Navigation from "./_components/Navigations";
