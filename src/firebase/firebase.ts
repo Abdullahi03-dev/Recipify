@@ -2,9 +2,11 @@
 import { initializeApp, FirebaseApp } from "firebase/app";
 import { getAuth, Auth } from "firebase/auth";
 import { getFirestore, Firestore } from "firebase/firestore";
-
+// if (!process.env.API_KEY) {
+//   console.error("Missing API KEY in environment");
+// }
 const firebaseConfig = {
-    apiKey: "AIzaSyBNmY_upIIEGVL-_L4E-k2qz4YvNEsjDwA",
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
     authDomain: "recipify-4b2e4.firebaseapp.com",
     projectId: "recipify-4b2e4",
     storageBucket: "recipify-4b2e4.firebasestorage.app",

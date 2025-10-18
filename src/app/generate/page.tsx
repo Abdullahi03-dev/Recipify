@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Sparkles, ChefHat, RefreshCw } from "lucide-react";
+import {  ChefHat, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
@@ -59,7 +59,6 @@ const Generate = () => {
           {/* Header */}
           <div className="text-center mb-12 space-y-4">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary/10 to-accent/10 text-primary font-medium mb-4">
-              <Sparkles className="w-4 h-4 ai-sparkle" />
               AI Recipe Generator
             </div>
             <h1 className="text-4xl lg:text-5xl font-bold">
@@ -99,7 +98,6 @@ const Generate = () => {
                 </>
               ) : (
                 <>
-                  <Sparkles className="w-5 h-5" />
                   Generate Recipe with AI
                 </>
               )}
