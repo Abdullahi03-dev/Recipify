@@ -192,7 +192,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-2 font-bold text-lg">
-              {/* <ChefHat className="w-5 h-5 text-primary" /> */}
+              
               <span>RecipeAI</span>
             </div>
 
