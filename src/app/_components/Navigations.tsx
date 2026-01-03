@@ -35,7 +35,6 @@ const Navigation = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 font-bold text-xl group">
-          {/* <ChefHat className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" /> */}
           <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Recipify
           </span>
