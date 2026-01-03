@@ -4,7 +4,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { ChefHat, Home, Search, LogOut, Menu, X } from "lucide-react";
+import {  Home, Search, LogOut, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "react-hot-toast";
 import { signOut } from "firebase/auth";
@@ -20,7 +20,7 @@ const Navigation = () => {
   const handleLogout = async () => {
     try {
       await signOut(auth);
-      toast.success("Signed out successfully 👋");
+      toast.success("Signed out successfully ");
       setTimeout(() => {
         router.push("/auth");
       }, 1200);
@@ -35,7 +35,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 font-bold text-xl group">
-          <ChefHat className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
+          {/* <ChefHat className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" /> */}
           <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Recipify
           </span>
